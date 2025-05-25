@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init({
+                publicKey: "BGN3grOb9BJ4xzUiC",
+            });
+        })();
+    </script>
+
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+</head>
+
+<body>
+
+    <!-- <div class="perloader">
+        <div class="counter">0</div>
+
+        <div class="overlay">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+    </div> -->
+
+    <div class="nav">
+        <div class="items-left">
+            <a class="hideOnMobile" href="#">Home</a>
+            <a class="hideOnMobile" href="#">About</a>
+        </div>
+        <div class="items-right">
+            <a class="hideOnMobile" href="#">services</a>
+            <a class="hideOnMobile" href="#">Contact</a>
+            <a class="menu-button"><i onclick=showSidebar() class="ri-menu-line"></i></a>
+        </div>
+    </div>
+    <div class="sidebar">
+        <a class="animate" href="#">Home</a>
+        <a class="animate" href="#">About</a>
+        <a class="animate" href="#">services</a>
+        <a class="animate" href="#">Contact</a>
+        <a class="cross-button"><i onclick=hideSidebar() class="ri-close-large-line"></i></a>
+    </div>
+
+    <div class="logo-container">
+        <img class="logo" src="./assets/logo.png">
+    </div>
+    <div class="container">
+        <!-- <img class="spade" src="./assets/spade.png">
+        <h1>HIGH CARD</h1> -->
+    </div>
+    <div class="content">
+        <div class="heading">
+            About Us
+        </div>
+        <div class="content-1">
+            <div>
+                <img src="./assets/hero.jpg">
+            </div>
+            <div>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste tempora ea officia quae! Perspiciatis
+                    blanditiis, dolore aperiam nihil inventore praesentium!</p>
+            </div>
+        </div>
+    </div>
+    <div class="page3">
+        <h1>services</h1>
+    </div>
+    <div>
+        <div class="card cards1">
+            <div class="container1">
+                <div class="elem line1">
+                    <div class="elem-part1">
+                        <h2>Digital Presence Audit</h2>
+                        <h4><i class="ri-check-line"></i>Craft a brand that commands attention</h4>
+                    </div>
+                    <div class="elem-part2">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, minima? Quas esse nam pariatur
+                            natus dignissimos sapiente, eveniet reprehenderit ullam.</p>
+                    </div>
+                </div>
+                <div class="elem black line1">
+                    <div class="elem-part1">
+                        <h2>Brand Strategy & Positioning</h2>
+                        <h4><i class="ri-check-line"></i>Craft a brand that commands attention</h4>
+                    </div>
+                    <div class="elem-part2">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, minima? Quas esse nam pariatur
+                            natus dignissimos sapiente, eveniet reprehenderit ullam.</p>
+                    </div>
+                </div>
+                <div class="elem black line2">
+                    <div class="elem-part1">
+                        <h2>Website Design & Development</h2>
+                        <h4><i class="ri-check-line"></i>Design that drives results</h4>
+                    </div>
+                    <div class="elem-part2">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, minima? Quas esse nam pariatur
+                            natus dignissimos sapiente, eveniet reprehenderit ullam.</p>
+                    </div>
+                </div>
+                <div class="elem line2">
+                    <div class="elem-part1">
+                        <h2>Search Engine Optimization (SEO)</h2>
+                        <h4><i class="ri-check-line"></i>Be found where it matters most</h4>
+                    </div>
+                    <div class="elem-part2">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, minima? Quas esse nam pariatur
+                            natus dignissimos sapiente, eveniet reprehenderit ullam.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card cards2">
+            <div class="container1">
+                <div class="elem line1">
+                    <div class="elem-part1">
+                        <h2>Digital Presence Audit</h2>
+                        <h4><i class="ri-check-line"></i>Craft a brand that commands attention</h4>
+                    </div>
+                    <div class="elem-part2">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, minima? Quas esse nam pariatur
+                            natus dignissimos sapiente, eveniet reprehenderit ullam.</p>
+                    </div>
+                </div>
+                <div class="elem black line1">
+                    <div class="elem-part1">
+                        <h2>Brand Strategy & Positioning</h2>
+                        <h4><i class="ri-check-line"></i>Craft a brand that commands attention</h4>
+                    </div>
+                    <div class="elem-part2">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, minima? Quas esse nam pariatur
+                            natus dignissimos sapiente, eveniet reprehenderit ullam.</p>
+                    </div>
+                </div>
+                <div class="elem black line2">
+                    <div class="elem-part1">
+                        <h2>Website Design & Development</h2>
+                        <h4><i class="ri-check-line"></i>Design that drives results</h4>
+                    </div>
+                    <div class="elem-part2">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, minima? Quas esse nam pariatur
+                            natus dignissimos sapiente, eveniet reprehenderit ullam.</p>
+                    </div>
+                </div>
+                <div class="elem line2">
+                    <div class="elem-part1">
+                        <h2>Search Engine Optimization (SEO)</h2>
+                        <h4><i class="ri-check-line"></i>Be found where it matters most</h4>
+                    </div>
+                    <div class="elem-part2">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, minima? Quas esse nam pariatur
+                            natus dignissimos sapiente, eveniet reprehenderit ullam.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card cards3">
+            <div class="container1">
+                <div class="elem line1">
+                    <div class="elem-part1">
+                        <h2>Digital Presence Audit</h2>
+                        <h4><i class="ri-check-line"></i>Craft a brand that commands attention</h4>
+                    </div>
+                    <div class="elem-part2">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, minima? Quas esse nam pariatur
+                            natus dignissimos sapiente, eveniet reprehenderit ullam.</p>
+                    </div>
+                </div>
+                <div class="elem black line1">
+                    <div class="elem-part1">
+                        <h2>Brand Strategy & Positioning</h2>
+                        <h4><i class="ri-check-line"></i>Craft a brand that commands attention</h4>
+                    </div>
+                    <div class="elem-part2">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, minima? Quas esse nam pariatur
+                            natus dignissimos sapiente, eveniet reprehenderit ullam.</p>
+                    </div>
+                </div>
+                <div class="elem black line2">
+                    <div class="elem-part1">
+                        <h2>Website Design & Development</h2>
+                        <h4><i class="ri-check-line"></i>Design that drives results</h4>
+                    </div>
+                    <div class="elem-part2">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, minima? Quas esse nam pariatur
+                            natus dignissimos sapiente, eveniet reprehenderit ullam.</p>
+                    </div>
+                </div>
+                <div class="elem line2">
+                    <div class="elem-part1">
+                        <h2>Search Engine Optimization (SEO)</h2>
+                        <h4><i class="ri-check-line"></i>Be found where it matters most</h4>
+                    </div>
+                    <div class="elem-part2">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, minima? Quas esse nam pariatur
+                            natus dignissimos sapiente, eveniet reprehenderit ullam.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card cards4">
+            <div class="container1">
+                <div class="elem line1">
+                    <div class="elem-part1">
+                        <h2>Digital Presence Audit</h2>
+                        <h4><i class="ri-check-line"></i>Craft a brand that commands attention</h4>
+                    </div>
+                    <div class="elem-part2">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, minima? Quas esse nam pariatur
+                            natus dignissimos sapiente, eveniet reprehenderit ullam.</p>
+                    </div>
+                </div>
+                <div class="elem black line1">
+                    <div class="elem-part1">
+                        <h2>Brand Strategy & Positioning</h2>
+                        <h4><i class="ri-check-line"></i>Craft a brand that commands attention</h4>
+                    </div>
+                    <div class="elem-part2">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, minima? Quas esse nam pariatur
+                            natus dignissimos sapiente, eveniet reprehenderit ullam.</p>
+                    </div>
+                </div>
+                <div class="elem black line2">
+                    <div class="elem-part1">
+                        <h2>Website Design & Development</h2>
+                        <h4><i class="ri-check-line"></i>Design that drives results</h4>
+                    </div>
+                    <div class="elem-part2">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, minima? Quas esse nam pariatur
+                            natus dignissimos sapiente, eveniet reprehenderit ullam.</p>
+                    </div>
+                </div>
+                <div class="elem line2">
+                    <div class="elem-part1">
+                        <h2>Search Engine Optimization (SEO)</h2>
+                        <h4><i class="ri-check-line"></i>Be found where it matters most</h4>
+                    </div>
+                    <div class="elem-part2">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, minima? Quas esse nam pariatur
+                            natus dignissimos sapiente, eveniet reprehenderit ullam.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="page4">
+        <div class="wrapper">
+            <div class="box">
+                <div class="front">
+                    <h2>Digital Marketing Agency</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad similique magnam eaque totam quidem
+                        incidunt dolorum minima? Necessitatibus, eos eveniet.</p>
+                    <a href="#" class="animate btn">Contact Us</a>
+                </div>
+
+                <div class="back">
+                    <a href="#" class="animate close">&times;</a>
+
+                    <div class="container3">
+                        <form>
+                            <label> Your Full Name</label>
+                            <input type="text" id="name" placeholder="Your full name">
+                            <label> Your Email Address</label>
+                            <input type="email" id="email" placeholder="Your email address">
+                            <label> Your Phone Number</label>
+                            <input type="number" id="number" placeholder="Your phone number">
+                            <label> What service do you need</label>
+                            <textarea id="message"
+                                placeholder="please tell us about your company and what service do you need"></textarea>
+                            <input type="button" class="subbtn" onclick="sendEmail()" value="submit">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"
+        integrity="sha512-NcZdtrT77bJr4STcmsGAESr06BYGE8woZdSdEgqnpyqac7sugNO+Tr4bGwGF3MsnEkGKhU2KL2xh6Ec+BqsaHA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js"
+        integrity="sha512-P2IDYZfqSwjcSjX0BKeNhwRUH8zRPGlgcWl5n6gBLzdi4Y5/0O4zaXrtO4K9TZK6Hn1BenYpKowuCavNandERg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
