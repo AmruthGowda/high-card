@@ -4,8 +4,32 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     overflow-x: hidden;
+}
+
+@font-face {
+    font-family: futura;
+    src: url(./assets/futur.ttf);
+}
+
+@font-face {
+    font-family: futuraBold;
+    src: url(./assets/Futura\ Bold\ font.ttf);
+}
+
+@font-face {
+    font-family: futuraBook;
+    src: url(./assets/Futura\ Book\ font.ttf);
+}
+
+@font-face {
+    font-family: futuraMediumItalic;
+    src: url(./assets/Futura\ Medium\ Italic\ font.ttf);
 }
 
 .nav {
@@ -27,8 +51,17 @@ a {
     color: #000;
     padding: 0 1em;
     font-weight: 500;
-    /* font-family: ; */
+    font-family: futuraBold;
     font-size: 20px;
+}
+
+button {
+    font-size: 20px;
+    padding: 5px 10px;
+    text-transform: uppercase;
+    background: linear-gradient(720deg, #fef37c, #B3740E);
+    border-radius: 2px;
+    font-family: futuraBold;
 }
 
 .logo {
@@ -55,6 +88,7 @@ a {
     justify-content: center;
     align-items: center;
     overflow-x: hidden;
+    background-color: #e7e7e7;
 }
 
 .container img {
@@ -81,16 +115,19 @@ a {
     position: relative;
     padding: 0 4em;
     color: #e7e7e7;
+    background-color: rgba(0, 0, 0, 0.788);
     overflow-x: hidden;
     overflow-y: hidden;
 }
 
 .content .heading {
-    font-size: 200px;
+    font-size: 150px;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 100px;
+    padding-top: 90px;
+    font-family: futuraBold;
+    text-transform: uppercase;
 }
 
 .content-1 {
@@ -111,6 +148,7 @@ a {
     font-size: 50px;
     font-weight: 100;
     width: 700px;
+    font-family: futuraBook;
 
 }
 
@@ -137,11 +175,21 @@ a {
     align-items: flex-start;
     justify-content: center;
     overflow-x: hidden;
+
+
+
 }
 
 .sidebar a {
     padding: 30px 20px;
     font-size: 30px;
+    margin-left: 30vw;
+}
+
+.sidebar button {
+    font-size: 30px;
+    margin-left: 35vw;
+    margin-top: 20px;
 }
 
 .sidebar i {
@@ -150,8 +198,9 @@ a {
     right: 10%;
     border: #000;
     border-radius: 50%;
-    background-color: red;
+    background-color: black;
     padding: 10px;
+    color: white
 }
 
 .ri-menu-line {
@@ -165,14 +214,13 @@ a {
 .page3 {
     height: 100vh;
     width: 100%;
-    background-color: white;
+    background-color: #e7e7e7;
     padding: 5vw 0;
     overflow-x: hidden;
     overflow-y: hidden;
     /* display: flex; */
     justify-content: center;
     align-items: center;
-
 }
 
 /* body{
@@ -184,6 +232,7 @@ a {
     text-transform: uppercase;
     font-weight: 600;
     margin-top: -50px;
+    font-family: futuraBold;
 }
 
 /* .page4 {
@@ -236,7 +285,7 @@ a {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    gap:25px
+    gap: 25px
 }
 
 .elem {
@@ -375,7 +424,7 @@ a {
 .page4 {
     width: 100%;
     height: 100vh;
-    background-color: black;
+    background-color: #e7e7e7;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -407,10 +456,11 @@ a {
     width: 100%;
     position: absolute;
     backface-visibility: hidden;
+    background-color: rgba(0, 0, 0, 0.788);
 }
 
 .wrapper .box .front {
-    background-color: #e7e7e7;
+    background-color: rgba(0, 0, 0, 0.788);
     box-shadow: 0 2px 15px -2px rgba(0, 0, 0, 0.6);
 }
 
@@ -419,6 +469,8 @@ a {
     font-size: 50px;
     text-align: center;
     margin-bottom: 25px;
+    font-family: futuraBold;
+    color: #e7e7e7;
 }
 
 .front p {
@@ -428,17 +480,21 @@ a {
     line-height: 1.5;
     font-size: 20px;
     margin-bottom: 25px;
+    font-family: futuraBook;
+    color: #e7e7e7;
 }
 
 .wrapper .box .back {
-    background-color: #fff;
+    background-color: rgba(0, 0, 0, 0.788);
     transform: rotateY(180deg);
 }
 
 .wrapper .btn {
     margin-top: 56px;
     /* bottom: 0; */
-    background-color: red;
+    background: linear-gradient(720deg, #fef37c, #B3740E);
+    color: black;
+    letter-spacing: 0.1em;
 }
 
 .wrapper .box.animated {
@@ -463,29 +519,31 @@ a {
     color: #fff;
     display: block;
     font-size: 15px;
+    font-family: futuraBold;
     margin: 0 auto;
     max-width: 250px;
     padding: 15px 0;
     text-align: center;
 }
 
-.container3{
+.container3 {
     border-radius: 5px;
     background-color: #e7e7e7;
     padding: 60px;
-    box-shadow: 0 2px 15px -2px rgba(0,0,0,0.6);
+    box-shadow: 0 2px 15px -2px rgba(0, 0, 0, 0.6);
 }
 
-form label{
+form label {
     text-transform: uppercase;
     font-weight: 500;
     letter-spacing: 3px;
+    font-family: futurabook;
 }
 
 input[type=text],
 input[type=email],
 input[type=number],
-textarea{
+textarea {
     width: 100%;
     padding: 12px;
     border: 1px solid #ccc;
@@ -496,11 +554,11 @@ textarea{
     resize: vertical;
 }
 
-input[type=button]{
+input[type=button] {
     background-color: #413b3b;
-    color:#fff;
+    color: #fff;
     padding: 15px 50px;
-    border:none;
+    border: none;
     border-radius: 50px;
     cursor: pointer;
     font-size: 15px;
@@ -508,11 +566,11 @@ input[type=button]{
     letter-spacing: 3px;
 }
 
-.perloader{
+.perloader {
     overflow: hidden;
 }
 
-.overlay{
+.overlay {
     position: fixed;
     width: 100vw;
     height: 100vh;
@@ -522,14 +580,14 @@ input[type=button]{
     /* background-color: red; */
 }
 
-.bar{
+.bar {
     width: 20vh;
     height: 105vh;
-    background:#1a1a1a;
+    background: #1a1a1a;
     overflow: hidden;
 }
 
-.counter{
+.counter {
     position: fixed;
     width: 100%;
     height: 100%;
@@ -540,10 +598,113 @@ input[type=button]{
     color: #bcbcc4;
     padding: 0.2em 0.4em;
     font-size: 20vw;
-    font-family:"Caroonter";
+    font-family: "Caroonter";
     overflow: hidden;
 }
 
+.card2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.container2 {
+    min-height: 150vh;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.788);
+}
+
+.container2 h4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    font-family: futuraMediumItalic;
+    font-size: 20px;
+    color: #e7e7e7;
+}
+
+.slider2 {
+    position: absolute;
+    top: 1vh;
+    width: 100vw;
+    height: 150vh;
+    overflow: hidden;
+    /* background-color: red; */
+    perspective: 1000px;
+    perspective-origin: 50% 370%;
+}
+
+.card2 {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    width: 50%;
+    height: 600px;
+    border-radius: 10px;
+    overflow: hidden;
+    transform: translate3d(-50%, -50%, 0);
+    background: #000;
+}
+
+.card2 img {
+    position: absolute;
+    opacity: 0.75;
+}
+
+.copy {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+.copy h1 {
+    position: relative;
+    text-align: center;
+    font-size: 3vw;
+    font-weight: 300;
+    letter-spacing: -0.05em;
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, 0.823);
+    font-family: futuraBold;
+}
+
+.copy h1 span {
+    position: relative;
+    display: inline-block;
+}
+
+.para {
+    margin-top: 50px;
+    padding: 40px
+}
+
+.para h4 {
+    font-family: futuraBook;
+    font-size: 2vw;
+    color: white;
+}
+
+.footer {
+    height: 10vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.788);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer i {
+    font-size: 30px;
+    background-color: #e7e7e7;
+    margin: 40px;
+}
 
 
 
@@ -571,200 +732,7 @@ input[type=button]{
         font-size: 40px;
         width: 500px;
     }
-     .container1 {
-        height: 100%;
-        /* background-color: red; */
-        width: 100%;
-        padding: 5px 5px;
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
 
-    }
-
-    .elem {
-        flex-shrink: 0;
-        height: 160px;
-        width: 100%;
-        border: 3px solid black;
-        border-radius: 50px;
-        /* background-color: red; */
-        padding: 10px;
-        box-shadow: 0px 5px 0px white;
-        display: flex;
-        color: black;
-        border-color: white;
-    }
-
-    .elem-part1 {
-        height: 100%;
-        width: 50%;
-        display: flex;
-        align-items: flex-start;
-        justify-content: space-between;
-        flex-direction: column;
-        padding-left: 10px;
-    }
-
-    .elem-part2 {
-        height: 100%;
-        width: 50%;
-    }
-
-    .elem-part2 p {
-        font-size: 15px;
-        height: 100%;
-        letter-spacing: 1px;
-        font-weight: 250;
-    }
-
-    .elem-part1 h2 {
-        font-size: 20px;
-        font-weight: 600;
-        width: 90%;
-        padding: 0px 3px;
-        border-radius: 10px;
-        /* font-family: ; */
-        background-color: #fef37c;
-    }
-
-    .elem-part1 h4 {
-        display: flex;
-        align-items: center;
-        font-size: 12px;
-        letter-spacing: 0.5px;
-        font-weight: 500;
-        gap: 2px;
-    }
-
-    .elem-part1 h4 i {
-        padding: 10px;
-        background-color: black;
-        color: #fff;
-        border-radius: 50%;
-        font-size: 10px;
-        font-weight: 900;
-    }
-
-    .black {
-        background-color: black;
-    }
-
-    .black .elem-part1 h2 {
-        font-size: 20px;
-        font-weight: 600;
-        width: 90%;
-        padding: 0px 3px;
-        border-radius: 10px;
-        /* font-family: ; */
-        background-color: #fff;
-    }
-
-    .black .elem-part1 h4 {
-        display: flex;
-        align-items: center;
-        font-size: 12px;
-        letter-spacing: 1px;
-        font-weight: 500;
-        gap: 2px;
-        color: rgba(255, 255, 255, 0.766)
-    }
-
-    .black .elem-part1 h4 i {
-        padding: 10px;
-        background-color: white;
-        color: black;
-        border-radius: 50%;
-        font-size: 10px;
-        font-weight: 900;
-    }
-
-    .black .elem-part2 p {
-        font-size: 15px;
-        height: 100%;
-        letter-spacing: 1px;
-        font-weight: 250;
-        color: rgba(255, 255, 255, 0.772);
-    }
-
-    .card {
-        position: sticky;
-        top: 0%;
-    }
-
-    .cards2 {
-        position: sticky;
-        top: 2%;
-    }
-
-    .cards3 {
-        position: sticky;
-        top: 4%;
-    }
-
-    .cards4 {
-        position: sticky;
-        top: 6%;
-    }
-
-    .page3 h1 {
-        font-size: 40vw;
-        margin-top: 30vh;
-    }
-
-    .cards2 .line1 {
-        border-color: black;
-    }
-
-    .cards2 .elem {
-        box-shadow: 0px 15px 0px black;
-    }
-
-    .cards4 .elem {
-        box-shadow: 0px 15px 0px black;
-    }
-
-    .cards2 .line2 {
-        border-color: black;
-    }
-
-    .cards4 .line1 {
-        border-color: black;
-    }
-
-    .cards4 .line2 {
-        border-color: black;
-    }
-}
-
-
-@media only screen and (max-width: 1080px) {
-    .container h1 {
-        font-size: 120px;
-    }
-
-    .logo {
-        width: 4%;
-        height: 5%;
-        padding: 2px 0px 0px 10px;
-        margin-top: 20px;
-        margin-left: -30px;
-    }
-
-    .content .heading {
-        font-size: 100px;
-    }
-
-    .content-1 img {
-        width: 250px;
-        height: 350px;
-        margin-right: 50px;
-    }
-
-    .content-1 p {
-        font-size: 40px;
-        width: 500px;
-    }
 
     .container1 {
         height: 100%;
@@ -930,11 +898,284 @@ input[type=button]{
     .cards4 .line2 {
         border-color: black;
     }
+
+
+}
+
+
+@media only screen and (max-width: 1080px) {
+    .container h1 {
+        font-size: 120px;
+    }
+
+    .logo {
+        width: 4%;
+        height: 5%;
+        padding: 2px 0px 0px 10px;
+        margin-top: 20px;
+        margin-left: -30px;
+    }
+
+
+
+
+    .content .heading {
+        font-size: 100px;
+    }
+
+    .content-1 img {
+        width: 250px;
+        height: 350px;
+        margin-right: 50px;
+    }
+
+    .content-1 p {
+        font-size: 40px;
+        width: 500px;
+    }
+
+    .container1 {
+        height: 100%;
+        /* background-color: red; */
+        width: 100%;
+        padding: 5px 5px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+    }
+
+
+    .elem {
+        flex-shrink: 0;
+        height: 160px;
+        width: 100%;
+        border: 3px solid black;
+        border-radius: 50px;
+        /* background-color: red; */
+        padding: 10px;
+        box-shadow: 0px 5px 0px white;
+        display: flex;
+        color: black;
+        border-color: white;
+    }
+
+    .elem-part1 {
+        height: 100%;
+        width: 50%;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        flex-direction: column;
+        padding-left: 10px;
+    }
+
+    .elem-part2 {
+        height: 100%;
+        width: 50%;
+    }
+
+    .elem-part2 p {
+        font-size: 15px;
+        height: 100%;
+        letter-spacing: 1px;
+        font-weight: 250;
+    }
+
+    .elem-part1 h2 {
+        font-size: 20px;
+        font-weight: 600;
+        width: 90%;
+        padding: 0px 3px;
+        border-radius: 10px;
+        /* font-family: ; */
+        background-color: #fef37c;
+    }
+
+    .elem-part1 h4 {
+        display: flex;
+        align-items: center;
+        font-size: 12px;
+        letter-spacing: 0.5px;
+        font-weight: 500;
+        gap: 2px;
+    }
+
+    .elem-part1 h4 i {
+        padding: 10px;
+        background-color: black;
+        color: #fff;
+        border-radius: 50%;
+        font-size: 10px;
+        font-weight: 900;
+    }
+
+    .black {
+        background-color: black;
+    }
+
+    .black .elem-part1 h2 {
+        font-size: 20px;
+        font-weight: 600;
+        width: 90%;
+        padding: 0px 3px;
+        border-radius: 10px;
+        /* font-family: ; */
+        background-color: #fff;
+    }
+
+    .black .elem-part1 h4 {
+        display: flex;
+        align-items: center;
+        font-size: 12px;
+        letter-spacing: 1px;
+        font-weight: 500;
+        gap: 2px;
+        color: rgba(255, 255, 255, 0.766)
+    }
+
+    .black .elem-part1 h4 i {
+        padding: 10px;
+        background-color: white;
+        color: black;
+        border-radius: 50%;
+        font-size: 10px;
+        font-weight: 900;
+    }
+
+    .black .elem-part2 p {
+        font-size: 15px;
+        height: 100%;
+        letter-spacing: 1px;
+        font-weight: 250;
+        color: rgba(255, 255, 255, 0.772);
+    }
+
+    .card {
+        position: sticky;
+        top: 0%;
+    }
+
+    .cards2 {
+        position: sticky;
+        top: 2%;
+    }
+
+    .cards3 {
+        position: sticky;
+        top: 4%;
+    }
+
+    .cards4 {
+        position: sticky;
+        top: 6%;
+    }
+
+    .page3 h1 {
+        font-size: 40vw;
+        margin-top: 30vh;
+    }
+
+    .cards2 .line1 {
+        border-color: black;
+    }
+
+    .cards2 .elem {
+        box-shadow: 0px 15px 0px black;
+    }
+
+    .cards4 .elem {
+        box-shadow: 0px 15px 0px black;
+    }
+
+    .cards2 .line2 {
+        border-color: black;
+    }
+
+    .cards4 .line1 {
+        border-color: black;
+    }
+
+    .cards4 .line2 {
+        border-color: black;
+    }
+
+    .slider2 {
+        position: absolute;
+        top: 15vh;
+        width: 100vw;
+        height: 100vh;
+        overflow: hidden;
+        /* background-color: red; */
+        perspective: 1000px;
+        perspective-origin: 10% 520%;
+    }
 }
 
 @media only screen and (max-width: 800px) {
     .hideOnMobile {
         display: none;
+    }
+
+    .para h4 {
+        font-family: futuraBook;
+        font-size: 3vw;
+        margin-top: 5px;
+        padding: 5px;
+        letter-spacing: 0.1em;
+        color: rgba(0, 0, 0, 0.758);
+    }
+
+    .footer i {
+        font-size: 20px;
+        background-color: #e7e7e7;
+        margin: 5px;
+    }
+
+    .copy h1 {
+        position: relative;
+        text-align: center;
+        font-size: 4vw;
+        font-weight: 300;
+        letter-spacing: -0.05em;
+        text-transform: uppercase;
+        color: rgba(0, 0, 0, 0.758);
+        font-family: futuraBold;
+        letter-spacing: 0.2px;
+    }
+
+    .para {}
+
+    .card2 {
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        width: 70%;
+        height: 500px;
+        border-radius: 10px;
+        overflow: hidden;
+        transform: translate3d(-50%, -50%, 0);
+        background: #000;
+    }
+
+    .container2 {
+        min-height: 100vh;
+        position: relative;
+        width: 100vw;
+        height: 100vh;
+        overflow: hidden;
+        background-color: rgba(0, 0, 0, 0.788);
+    }
+
+    .slider2 {
+        position: absolute;
+        top: 10vh;
+        width: 100vw;
+        height: 100vh;
+        overflow: hidden;
+        /* background-color: red; */
+        perspective: 1000px;
+        perspective-origin: 50% 450%;
     }
 
     .menu-button {
@@ -991,7 +1232,7 @@ input[type=button]{
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
-        gap:0px
+        gap: 0px
     }
 
     .elem {
@@ -1163,7 +1404,7 @@ input[type=button]{
         width: 9.2%;
         height: 5%;
         padding: 2px 0px 0px 10px;
-        margin-left: -40px;
+        margin-left: -8vw;
         margin-top: 30px;
         flex-shrink: 0;
     }
