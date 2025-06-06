@@ -1542,6 +1542,16 @@ input[type=button] {
     .container h1 {
         font-size: 60px;
     }
+    .slider2 {
+        position: absolute;
+        top: 10vh;
+        width: 100vw;
+        height: 100vh;
+        overflow: hidden;
+        /* background-color: red; */
+        perspective: 250px;
+        perspective-origin: 50% 140%;
+    }
 
     .logo {
         width: 9.2%;
