@@ -1522,6 +1522,19 @@ input[type=button] {
     .sidebar {
         width: 100%;
     }
+    .slider2 {
+        position: absolute;
+        top: 15vh;
+        width: 100vw;
+        height: 100vh;
+        overflow: hidden;
+        /* background-color: red; */
+        perspective: 250px;
+        perspective-origin: 50% 140%;
+    }
+    .copy {
+        top: 40%;
+    }
 
     .container h1 {
         font-size: 60px;
