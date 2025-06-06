@@ -1180,6 +1180,9 @@ input[type=button] {
         perspective: 250px;
         perspective-origin: 50% 140%;
     }
+    .copy {
+        top: 40%;
+    }
 }
 
 @media only screen and (max-width: 800px) {
@@ -1250,7 +1253,7 @@ input[type=button] {
     }
 
     .copy {
-        top: 50%;
+        top: 40%;
     }
 
     .copy h1 {
