@@ -1181,8 +1181,18 @@ input[type=button] {
         perspective-origin: 50% 140%;
     }
 
-    .copy {
-        top: 40%;
+    .copy h1 {
+        position: relative;
+        text-align: center;
+        font-size: 3vw;
+        font-weight: 700;
+        letter-spacing: -0.05em;
+        text-transform: uppercase;
+        background: -webkit-linear-gradient(#fef37c, #B3740E);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-family: futuraBold;
+        letter-spacing: 0.2px;
     }
 }
 
