@@ -1180,6 +1180,7 @@ input[type=button] {
         perspective: 250px;
         perspective-origin: 50% 140%;
     }
+
     .copy {
         top: 40%;
     }
@@ -1263,7 +1264,9 @@ input[type=button] {
         font-weight: 700;
         letter-spacing: -0.05em;
         text-transform: uppercase;
-        color: rgba(0, 0, 0, 0.758);
+        background: -webkit-linear-gradient(#fef37c, #B3740E);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
         font-family: futuraBold;
         letter-spacing: 0.2px;
     }
@@ -1521,19 +1524,6 @@ input[type=button] {
 @media only screen and (max-width: 450px) {
     .sidebar {
         width: 100%;
-    }
-    .slider2 {
-        position: absolute;
-        top: 15vh;
-        width: 100vw;
-        height: 100vh;
-        overflow: hidden;
-        /* background-color: red; */
-        perspective: 250px;
-        perspective-origin: 50% 140%;
-    }
-    .copy {
-        top: 40%;
     }
 
     .container h1 {
