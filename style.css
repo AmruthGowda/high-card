@@ -609,7 +609,7 @@ input[type=button] {
 }
 
 .container2 {
-    min-height: 150vh;
+    min-height: 100vh;
     position: relative;
     width: 100vw;
     height: 100vh;
@@ -634,8 +634,8 @@ input[type=button] {
     height: 150vh;
     overflow: hidden;
     /* background-color: red; */
-    perspective: 1000px;
-    perspective-origin: 50% 370%;
+    perspective: 200px;
+    perspective-origin: 50% 100%;
 }
 
 .card2 {
@@ -645,33 +645,45 @@ input[type=button] {
     width: 50%;
     height: 600px;
     border-radius: 10px;
+    border-color: white;
     overflow: hidden;
     transform: translate3d(-50%, -50%, 0);
     background: #000;
+    border-style: solid;
+    border-color: rgba(255, 255, 255, 0.282);
+    border-width: thin;
 }
 
-.card2 img {
+/* .card2 img {
     position: absolute;
     opacity: 0.75;
-}
+} */
 
 .copy {
     position: absolute;
-    top: 40%;
+    top: 30%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 100%;
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background-color: red; */
+    height: 100%;
 }
 
 .copy h1 {
     position: relative;
     text-align: center;
-    font-size: 3vw;
+    font-size: 2.5vw;
     font-weight: 300;
     letter-spacing: -0.05em;
     text-transform: uppercase;
-    color: rgba(0, 0, 0, 0.823);
+    background: -webkit-linear-gradient(#fef37c, #B3740E);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
     font-family: futuraBold;
 }
 
@@ -681,14 +693,71 @@ input[type=button] {
 }
 
 .para {
-    margin-top: 50px;
-    padding: 40px
+    margin-top: -15px;
+    padding: 40px;
 }
 
 .para h4 {
     font-family: futuraBook;
-    font-size: 2vw;
-    color: white;
+    font-size: 1.5vw;
+    color: #e7e7e7;
+    font-weight: 100;
+}
+
+.card-service {
+    /* background-color: rgba(0, 0, 0, 0.788); */
+    background-color: black;
+    height: 8vh;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    border-radius: 10px;
+    position: relative;
+}
+
+.card-service h4 {
+    margin-top: -5px;
+    color: #e7e7e7;
+    font-family: futuraMediumItalic;
+}
+
+@property --angle {
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+}
+
+.card-service::after,
+.card-service::before {
+    --angle: 0deg;
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image: conic-gradient(from var(--angle), transparent 80%, #fef37c, #B3740E);
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    z-index: -1;
+    padding: 2.5px;
+    border-radius: 10px;
+    animation: 3s spin linear infinite;
+}
+
+.card-service::before {
+    filter: blur(1.5rem);
+    opacity: 0.5;
+}
+
+@keyframes spin {
+    from {
+        --angle: 0deg;
+    }
+
+    to {
+        --angle: 360deg;
+    }
 }
 
 .footer {
@@ -705,6 +774,7 @@ input[type=button] {
     background-color: #e7e7e7;
     margin: 40px;
 }
+
 
 
 
@@ -1107,8 +1177,8 @@ input[type=button] {
         height: 100vh;
         overflow: hidden;
         /* background-color: red; */
-        perspective: 1000px;
-        perspective-origin: 10% 520%;
+        perspective: 250px;
+        perspective-origin: 50% 140%;
     }
 }
 
@@ -1117,13 +1187,60 @@ input[type=button] {
         display: none;
     }
 
+    .card-service {
+        background-color: black;
+        height: 8vh;
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        border-radius: 10px;
+        position: relative;
+        letter-spacing: 0.5px;
+    }
+
+    .card-service h4 {
+        margin-top: -5px;
+        color: #e7e7e7;
+        font-family: futuraMediumItalic;
+        font-size: 10px;
+    }
+
+    @property --angle {
+        syntax: "<angle>";
+        initial-value: 0deg;
+        inherits: false;
+    }
+
+    .card-service::after,
+    .card-service::before {
+        --angle: 0deg;
+        content: '';
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background-image: conic-gradient(from var(--angle), transparent 80%, #fef37c, #B3740E);
+        top: 50%;
+        left: 50%;
+        translate: -50% -50%;
+        z-index: -1;
+        padding: 2.5px;
+        border-radius: 10px;
+        animation: 3s spin linear infinite;
+    }
+
+    .card-service::before {
+        filter: blur(1.5rem);
+        opacity: 0.5;
+    }
+
     .para h4 {
         font-family: futuraBook;
         font-size: 3vw;
         margin-top: 5px;
-        padding: 5px;
+        /* padding: 5px; */
         letter-spacing: 0.1em;
-        color: rgba(0, 0, 0, 0.758);
+        color: white;
     }
 
     .footer i {
@@ -1132,11 +1249,15 @@ input[type=button] {
         margin: 5px;
     }
 
+    .copy {
+        top: 35%;
+    }
+
     .copy h1 {
         position: relative;
         text-align: center;
-        font-size: 4vw;
-        font-weight: 300;
+        font-size: 3vw;
+        font-weight: 700;
         letter-spacing: -0.05em;
         text-transform: uppercase;
         color: rgba(0, 0, 0, 0.758);
@@ -1144,7 +1265,7 @@ input[type=button] {
         letter-spacing: 0.2px;
     }
 
-    .para {}
+
 
     .card2 {
         position: absolute;
@@ -1156,6 +1277,9 @@ input[type=button] {
         overflow: hidden;
         transform: translate3d(-50%, -50%, 0);
         background: #000;
+        border-style: solid;
+        border-color: rgba(255, 255, 255, 0.282);
+        border-width: thin;
     }
 
     .container2 {
@@ -1174,8 +1298,8 @@ input[type=button] {
         height: 100vh;
         overflow: hidden;
         /* background-color: red; */
-        perspective: 1000px;
-        perspective-origin: 50% 450%;
+        perspective: 250px;
+        perspective-origin: 50% 140%;
     }
 
     .menu-button {
