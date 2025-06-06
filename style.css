@@ -1172,7 +1172,7 @@ input[type=button] {
         border-color: black;
     }
 
-    /* .slider2 {
+    .slider2 {
         position: absolute;
         top: 15vh;
         width: 100vw;
@@ -1181,7 +1181,7 @@ input[type=button] {
         /* background-color: red; */
         perspective: 250px;
         perspective-origin: 50% 140%;
-    } */
+    }
 
     .copy h1 {
         position: relative;
