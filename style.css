@@ -1277,11 +1277,11 @@ input[type=button] {
         font-weight: 800;
         letter-spacing: -0.05em;
         text-transform: uppercase;
-        background: -webkit-linear-gradient(#fef37c, #B3740E);
+        /* background: -webkit-linear-gradient(#fef37c, #B3740E);
         -webkit-background-clip: text;
         background-clip: text;
-        -webkit-text-fill-color: transparent;
-        /* color: white; */
+        -webkit-text-fill-color: transparent; */
+        color: white;
         font-family: futuraBold;
         letter-spacing: 0.2px;
     }
@@ -1320,7 +1320,7 @@ input[type=button] {
         overflow: hidden;
         /* background-color: red; */
         perspective: 250px;
-        perspective-origin: 50% 140%;
+        perspective-origin: 50% 100%;
     }
 
     .menu-button {
