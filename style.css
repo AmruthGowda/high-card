@@ -634,7 +634,7 @@ input[type=button] {
     height: 150vh;
     overflow: hidden;
     /* background-color: red; */
-    perspective: 200px;
+    perspective: 250px;
     perspective-origin: 50% 100%;
 }
 
@@ -661,7 +661,7 @@ input[type=button] {
 
 .copy {
     position: absolute;
-    top: 30%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 100%;
@@ -682,6 +682,7 @@ input[type=button] {
     letter-spacing: -0.05em;
     text-transform: uppercase;
     background: -webkit-linear-gradient(#fef37c, #B3740E);
+    -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
     font-family: futuraBold;
@@ -1274,9 +1275,10 @@ input[type=button] {
         font-weight: 300;
         letter-spacing: -0.05em;
         text-transform: uppercase;
-        /* background: -webkit-linear-gradient(#fef37c, #B3740E);
+        background: -webkit-linear-gradient(#fef37c, #B3740E);
+        -webkit-background-clip: text;
         background-clip: text;
-        -webkit-text-fill-color: transparent; */
+        -webkit-text-fill-color: transparent;
         color: white;
         font-family: futuraBold;
         letter-spacing: 0.2px;
