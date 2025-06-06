@@ -1274,7 +1274,8 @@ input[type=button] {
         font-weight: 300;
         letter-spacing: -0.05em;
         text-transform: uppercase;
-        background: -webkit-linear-gradient(#fef37c, #B3740E);
+        /* background: -webkit-linear-gradient(#fef37c, #B3740E); */
+        background: red;
         background-clip: text;
         -webkit-text-fill-color: transparent;
         font-family: futuraBold;
