@@ -1312,16 +1312,16 @@ input[type=button] {
         background-color: rgba(0, 0, 0, 0.788);
     }
 
-    /* .slider2 {
+    .slider2 {
         position: absolute;
         top: 10vh;
         width: 100vw;
         height: 100vh;
         overflow: hidden;
         /* background-color: red; */
-        /* perspective: 250px;
-        perspective-origin: 50% 140%; */
-    } */
+        perspective: 250px;
+        perspective-origin: 50% 140%;
+    }
 
     .menu-button {
         display: block;
