@@ -681,11 +681,12 @@ input[type=button] {
     font-weight: 300;
     letter-spacing: -0.05em;
     text-transform: uppercase;
-    background: -webkit-linear-gradient(#fef37c, #B3740E);
+    /* background: -webkit-linear-gradient(#fef37c, #B3740E);
     -webkit-background-clip: text;
     background-clip: text;
-    -webkit-text-fill-color: transparent;
+    -webkit-text-fill-color: transparent; */
     font-family: futuraBold;
+    color: white;
 }
 
 .copy h1 span {
@@ -1188,10 +1189,11 @@ input[type=button] {
         font-size: 3vw;
         font-weight: 700;
         letter-spacing: -0.05em;
-        text-transform: uppercase;
+        /* text-transform: uppercase;
         background: -webkit-linear-gradient(#fef37c, #B3740E);
         background-clip: text;
-        -webkit-text-fill-color: transparent;
+        -webkit-text-fill-color: transparent; */
+        color: white;
         font-family: futuraBold;
         letter-spacing: 0.2px;
     }
@@ -1275,10 +1277,10 @@ input[type=button] {
         font-weight: 300;
         letter-spacing: -0.05em;
         text-transform: uppercase;
-        background: -webkit-linear-gradient(#fef37c, #B3740E);
+        /* background: -webkit-linear-gradient(#fef37c, #B3740E);
         -webkit-background-clip: text;
         background-clip: text;
-        -webkit-text-fill-color: transparent;
+        -webkit-text-fill-color: transparent; */
         color: white;
         font-family: futuraBold;
         letter-spacing: 0.2px;
@@ -1549,8 +1551,8 @@ input[type=button] {
         height: 100vh;
         overflow: hidden;
         /* background-color: red; */
-        perspective: 250px;
-        perspective-origin: 50% 140%;
+        perspective: 270px;
+        perspective-origin: 50% 150%;
     }
 
     .logo {
