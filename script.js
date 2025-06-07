@@ -223,3 +223,22 @@ function scrollToContact() {
     const contactSection = document.getElementById("contact");
     contactSection.scrollIntoView({ behavior: "smooth" });
 }
+
+const progressBar = document.getElementById('progressBar');
+const cards = document.querySelectorAll('.card2');
+
+let clickCount = 0;
+const maxClicks = 5;
+
+cards.forEach(card => {
+    card.addEventListener('click', () => {
+        if (clickCount < maxClicks) {
+            clickCount++;
+        } else {
+            clickCount = 0; // Reset after 5 clicks
+        }
+
+        const progress = (clickCount / maxClicks) * 100;
+        progressBar.style.width = `${progress}%`;
+    });
+});

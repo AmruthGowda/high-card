@@ -89,6 +89,7 @@ button {
     align-items: center;
     overflow-x: hidden;
     background-color: #e7e7e7;
+    position: relative;
 }
 
 .container img {
@@ -221,6 +222,7 @@ button {
     /* display: flex; */
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 
 /* body{
@@ -627,6 +629,25 @@ input[type=button] {
     color: #e7e7e7;
 }
 
+.progress-container {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    height: 20px;
+    background: #eee;
+    /* margin-bottom: 40px; */
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.progress-bar {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+    transition: all 0.4s ease;
+}
+
 .slider2 {
     position: absolute;
     top: 1vh;
@@ -636,11 +657,14 @@ input[type=button] {
     /* background-color: red; */
     perspective: 250px;
     perspective-origin: 50% 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
 }
 
 .card2 {
     position: absolute;
-    top: 40%;
+    top: 35%;
     left: 50%;
     width: 50%;
     height: 600px;
@@ -779,6 +803,7 @@ input[type=button] {
     background-color: #e7e7e7;
     margin: 40px;
 }
+
 
 
 
@@ -1181,7 +1206,6 @@ input[type=button] {
         width: 100vw;
         height: 100vh;
         overflow: hidden;
-        /* background-color: red; */
         perspective: 250px;
         perspective-origin: 50% 140%;
     }
