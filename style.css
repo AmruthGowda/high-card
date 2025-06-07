@@ -681,12 +681,14 @@ input[type=button] {
     font-weight: 300;
     letter-spacing: -0.05em;
     text-transform: uppercase;
-    /* background: -webkit-linear-gradient(#fef37c, #B3740E);
-    -webkit-background-clip: text;
+    background: linear-gradient(90deg, #ff7e5f, #feb47b);
     background-clip: text;
-    -webkit-text-fill-color: transparent; */
+    /* background: -webkit-linear-gradient(#fef37c, #B3740E); */
+    -webkit-background-clip: text;
+    /* background-clip: text; */
+    -webkit-text-fill-color: transparent;
     font-family: futuraBold;
-    color: white;
+    /* color: white; */
 }
 
 .copy h1 span {
@@ -1277,11 +1279,12 @@ input[type=button] {
         font-weight: 800;
         letter-spacing: -0.05em;
         text-transform: uppercase;
-        /* background: -webkit-linear-gradient(#fef37c, #B3740E);
-        -webkit-background-clip: text;
+        background: linear-gradient(90deg, #ff7e5f, #feb47b);
         background-clip: text;
-        -webkit-text-fill-color: transparent; */
-        color: white;
+        /* background: -webkit-linear-gradient(#fef37c, #B3740E); */
+        -webkit-background-clip: text;
+        /* background-clip: text; */
+        -webkit-text-fill-color: transparent;
         font-family: futuraBold;
         letter-spacing: 0.2px;
     }
@@ -1544,6 +1547,7 @@ input[type=button] {
     .container h1 {
         font-size: 60px;
     }
+
     .slider2 {
         position: absolute;
         top: 10vh;
