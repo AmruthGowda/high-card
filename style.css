@@ -681,12 +681,6 @@ input[type=button] {
     font-weight: 300;
     letter-spacing: -0.05em;
     text-transform: uppercase;
-    background: linear-gradient(90deg, #ff7e5f, #feb47b);
-    background-clip: text;
-    /* background: -webkit-linear-gradient(#fef37c, #B3740E); */
-    -webkit-background-clip: text;
-    /* background-clip: text; */
-    -webkit-text-fill-color: transparent;
     font-family: futuraBold;
     /* color: white; */
 }
@@ -694,6 +688,13 @@ input[type=button] {
 .copy h1 span {
     position: relative;
     display: inline-block;
+    background: linear-gradient(90deg, #fef37c, #B3740E);
+    background-clip: text;
+    /* background: -webkit-linear-gradient(#fef37c, #B3740E); */
+    -webkit-background-clip: text;
+    /* background-clip: text; */
+    -webkit-text-fill-color: transparent;
+    color: transparent;
 }
 
 .para {
@@ -1199,6 +1200,18 @@ input[type=button] {
         font-family: futuraBold;
         letter-spacing: 0.2px;
     }
+
+    .copy h1 span {
+        position: relative;
+        display: inline-block;
+        background: linear-gradient(90deg, #fef37c, #B3740E);
+        background-clip: text;
+        /* background: -webkit-linear-gradient(#fef37c, #B3740E); */
+        -webkit-background-clip: text;
+        /* background-clip: text; */
+        -webkit-text-fill-color: transparent;
+        color: transparent;
+    }
 }
 
 @media only screen and (max-width: 800px) {
@@ -1287,7 +1300,7 @@ input[type=button] {
     .copy h1 span {
         position: relative;
         display: inline-block;
-        background: linear-gradient(90deg, #ff7e5f, #feb47b);
+        background: linear-gradient(90deg, #fef37c, #B3740E);
         background-clip: text;
         /* background: -webkit-linear-gradient(#fef37c, #B3740E); */
         -webkit-background-clip: text;
