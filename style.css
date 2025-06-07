@@ -1273,6 +1273,7 @@ input[type=button] {
     }
 
     .copy h1 {
+        display: inline-block;
         position: relative;
         text-align: center;
         font-size: 4vw;
@@ -1285,6 +1286,7 @@ input[type=button] {
         -webkit-background-clip: text;
         /* background-clip: text; */
         -webkit-text-fill-color: transparent;
+        color: transparent;
         font-family: futuraBold;
         letter-spacing: 0.2px;
     }
