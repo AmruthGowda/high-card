@@ -212,7 +212,7 @@ document.addEventListener("click", function () {
 
     gsap.to(nextCard.querySelectorAll("h1 span"), {
         y: 0,
-        duration: 0.6,
+        duration: 0.3,
         ease: "cubic",
         stagger: 0.02,
     });
