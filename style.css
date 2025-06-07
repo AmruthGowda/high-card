@@ -1280,13 +1280,6 @@ input[type=button] {
         font-weight: 800;
         letter-spacing: -0.05em;
         text-transform: uppercase;
-        background: linear-gradient(90deg, #ff7e5f, #feb47b);
-        background-clip: text;
-        /* background: -webkit-linear-gradient(#fef37c, #B3740E); */
-        -webkit-background-clip: text;
-        /* background-clip: text; */
-        -webkit-text-fill-color: transparent;
-        color: transparent;
         font-family: futuraBold;
         letter-spacing: 0.2px;
     }
@@ -1294,6 +1287,13 @@ input[type=button] {
     .copy h1 span {
         position: relative;
         display: inline-block;
+        background: linear-gradient(90deg, #ff7e5f, #feb47b);
+        background-clip: text;
+        /* background: -webkit-linear-gradient(#fef37c, #B3740E); */
+        -webkit-background-clip: text;
+        /* background-clip: text; */
+        -webkit-text-fill-color: transparent;
+        color: transparent;
     }
 
 
