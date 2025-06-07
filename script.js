@@ -206,15 +206,15 @@ document.addEventListener("click", function () {
 
             setTimeout(() => {
                 isAnimating = false;
-            }, 1000)
+            }, 100)
         },
     });
 
     gsap.to(nextCard.querySelectorAll("h1 span"), {
         y: 0,
-        duration: 1,
+        duration: 0.6,
         ease: "cubic",
-        stagger: 0.05,
+        stagger: 0.02,
     });
 });
 
