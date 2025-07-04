@@ -839,7 +839,7 @@ input[type=button] {
     font-family: futuraBook;
     letter-spacing: 0.1em;
     margin-top: 30px;
-    font-size:1.5vw ;
+    font-size: 1.5vw;
 }
 
 .AboutContaint4 {
@@ -1393,10 +1393,9 @@ input[type=button] {
 
     .AboutContaint1 h1 {
         font-family: futuraBold;
-        
+
         margin-bottom: 10px;
         font-size: 25px
-
     }
 
     .AboutContaint1 h4 {
@@ -1816,6 +1815,11 @@ input[type=button] {
         /* background-color: red; */
         perspective: 270px;
         perspective-origin: 50% 170%;
+    }
+
+    .card2 {
+        position: absolute;
+        top: 45%;
     }
 
     .logo {
