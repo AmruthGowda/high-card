@@ -1278,7 +1278,7 @@ input[type=button] {
         height: 100vh;
         overflow: hidden;
         perspective: 250px;
-        perspective-origin: 50% 140%;
+        perspective-origin: 50% 115%;
     }
 
     .copy h1 {
