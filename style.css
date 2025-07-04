@@ -1809,7 +1809,7 @@ input[type=button] {
 
     .slider2 {
         position: absolute;
-        top: 10vh;
+        top: 5vh;
         width: 100vw;
         height: 100vh;
         overflow: hidden;
