@@ -1814,7 +1814,7 @@ input[type=button] {
         height: 100vh;
         overflow: hidden;
         /* background-color: red; */
-        perspective: 270px;
+        perspective: 250px;
         perspective-origin: 50% 150%;
     }
 
