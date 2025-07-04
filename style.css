@@ -656,7 +656,7 @@ input[type=button] {
     overflow: hidden;
     /* background-color: red; */
     perspective: 250px;
-    perspective-origin: 50% 10%;
+    perspective-origin: 50% 100%;
     display: flex;
     justify-content: center;
     margin-top: 20px;
